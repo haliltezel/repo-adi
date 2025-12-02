@@ -186,15 +186,6 @@ asm-website/
 - JSDoc yorumları
 
 ## Lisans
-
-Bu proje ASM Endüstri'ye aittir. Tüm hakları saklıdır.
-
-## İletişim
-
-- **Email**: info@asmendustri.com
-- **Telefon**: +90 555 123 45 67
-- **Adres**: Fevzi Çakmak Mah. Sıla Cd. Aspak 3 San. Sit. C Blok 51/1D Karatay, Konya
-
 ## Sürüm Notları
 
 ### v1.0.0 (2024-12-02)
