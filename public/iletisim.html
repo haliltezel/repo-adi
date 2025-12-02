@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - ASM Endüstri</title>
+    <meta name="description" content="ASM Endüstri iletişim bilgileri. Konya'daki merkezimizden bize ulaşın. Kaliteli otomotiv yedek parça çözümleri için iletişime geçin.">
+    <meta name="keywords" content="ASM Endüstri iletişim, Konya otomotiv yedek parça, iletişim formu, telefon, adres">
+    <meta name="author" content="ASM Endüstri">
+    <meta property="og:title" content="İletişim - ASM Endüstri">
+    <meta property="og:description" content="ASM Endüstri iletişim bilgileri ve iletişim formu.">
+    <link rel="canonical" href="https://asmendustri.com/iletisim">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; z-index: 1000; }
+        .contact-info-card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .form-input { transition: all 0.3s ease; }
+        .form-input:focus { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+        .success-message { background: linear-gradient(135deg, #10b981, #059669); }
+        .error-message { background: linear-gradient(135deg, #ef4444, #dc2626); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">ASM ENDÜSTRİ</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">ANASAYFA</a>
+                        <a href="/urunler" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">ÜRÜNLER</a>
+                        <a href="/hakkimizda" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">HAKKIMIZDA</a>
+                        <a href="/iletisim" class="text-blue-600 hover:text-blue-800 px-3 py-2 text-sm font-medium transition-colors">İLETİŞİM</a>
+                        <a href="/admin" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">ADMİN</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
+                <a href="/" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">ANASAYFA</a>
+                <a href="/urunler" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">ÜRÜNLER</a>
+                <a href="/hakkimizda" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">HAKKIMIZDA</a>
+                <a href="/iletisim" class="text-blue-600 block px-3 py-2 text-base font-medium">İLETİŞİM</a>
+                <a href="/admin" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">ADMİN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-bg text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-shadow">İLETİŞİM</h1>
+            <p class="text-xl text-shadow max-w-2xl mx-auto">
+                Her türlü soru, talep ve öneriniz için bizimle iletişime geçebilirsiniz
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Address -->
+                <div class="contact-info-card text-center card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-map-marker-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Adres</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Fevzi Çakmak Mahallesi<br>
+                        Sıla Caddesi Aspak 3 Sanayi Sitesi<br>
+                        C Blok No:51/1D<br>
+                        Karatay, Konya
+                    </p>
+                </div>
+                
+                <!-- Phone -->
+                <div class="contact-info-card text-center card-hover">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Telefon</h3>
+                    <div class="text-gray-600 space-y-2">
+                        <p>
+                            <a href="tel:+905551234567" class="hover:text-blue-600 transition-colors">
+                                <i class="fas fa-mobile-alt mr-2"></i>+90 555 123 45 67
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+903322234567" class="hover:text-blue-600 transition-colors">
+                                <i class="fas fa-phone-alt mr-2"></i>+90 332 223 45 67
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Email -->
+                <div class="contact-info-card text-center card-hover">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">E-Posta</h3>
+                    <div class="text-gray-600 space-y-2">
+                        <p>
+                            <a href="mailto:asmotomotiv42@gmail.com" class="hover:text-blue-600 transition-colors">
+                                <i class="fas fa-envelope mr-2"></i>asmotomotiv42@gmail.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:info@asmendustri.com" class="hover:text-blue-600 transition-colors">
+                                <i class="fas fa-envelope mr-2"></i>info@asmendustri.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Hours Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Çalışma Saatleri</h2>
+                    <p class="text-lg text-gray-600">Size en iyi hizmeti sunmak için haftanın 6 günü açığız</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center">Hafta İçi</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-gray-600">Pazartesi</span>
+                                <span class="font-semibold text-gray-900">08:00 - 18:00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-gray-600">Salı</span>
+                                <span class="font-semibold text-gray-900">08:00 - 18:00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-gray-600">Çarşamba</span>
+                                <span class="font-semibold text-gray-900">08:00 - 18:00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-gray-600">Perşembe</span>
+                                <span class="font-semibold text-gray-900">08:00 - 18:00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2">
+                                <span class="text-gray-600">Cuma</span>
+                                <span class="font-semibold text-gray-900">08:00 - 18:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center">Hafta Sonu</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                                <span class="text-gray-600">Cumartesi</span>
+                                <span class="font-semibold text-gray-900">08:00 - 14:00</span>
+                            </div>
+                            <div class="flex justify-between items-center py-2">
+                                <span class="text-gray-600">Pazar</span>
+                                <span class="font-semibold text-red-600">Kapalı</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                            <p class="text-sm text-blue-800 text-center">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                Acil durumlar için 7/24 telefon ile ulaşabilirsiniz
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">İletişim Formu</h2>
+                <p class="text-lg text-gray-600">
+                    Aşağıdaki formu doldurarak bize ulaşabilirsiniz. En kısa sürede size geri dönüş yapacağız.
+                </p>
+            </div>
+            
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                                Ad Soyad <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Adınız ve soyadınız"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                E-Posta <span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="ornek@email.com"
+                            >
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
+                                Telefon
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="+90 555 123 45 67"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
+                                Konu
+                            </label>
+                            <select 
+                                id="subject" 
+                                name="subject" 
+                                class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            >
+                                <option value="">Konu seçin</option>
+                                <option value="urun-bilgisi">Ürün Bilgisi</option>
+                                <option value="fiyat-teklifi">Fiyat Teklifi</option>
+                                <option value="teknik-destek">Teknik Destek</option>
+                                <option value="sikayet">Şikayet</option>
+                                <option value="oneri">Öneri</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
+                            Mesaj <span class="text-red-500">*</span>
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required 
+                            class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Mesajınızı yazın..."
+                        ></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input 
+                            type="checkbox" 
+                            id="privacy" 
+                            name="privacy" 
+                            required 
+                            class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                        >
+                        <label for="privacy" class="ml-2 block text-sm text-gray-700">
+                            <a href="#" class="text-blue-600 hover:text-blue-500">Gizlilik politikamızı</a> okudum ve kabul ediyorum.
+                        </label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button 
+                            type="submit" 
+                            id="submit-btn"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors"
+                        >
+                            <span id="submit-text">Mesaj Gönder</span>
+                            <span id="submit-loading" class="hidden">
+                                <i class="fas fa-spinner fa-spin mr-2"></i>Gönderiliyor...
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Harita</h2>
+                <p class="text-lg text-gray-600">
+                    Firmamızın konumunu haritada görebilirsiniz
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.5!2d32.5!3d37.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU0JzAwLjAiTiAzMsKwMzAnMDAuMCJF!5e0!3m2!1str!2str!4v1234567890!5m2!1str!2str" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-96"
+                    ></iframe>
+                </div>
+                
+                <div class="p-6 bg-white">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">ASM Endüstri</h3>
+                            <p class="text-gray-600">Fevzi Çakmak Mah. Sıla Cd. Aspak 3 San. Sit. C Blok 51/1D Karatay, Konya</p>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <a 
+                                href="https://maps.google.com/?q=Fevzi+%C3%87akmak+Mahallesi+S%C4%B1la+Caddesi+Aspak+3+Sanayi+Sitesi+C+Blok+51%2F1D+Karatay%2C+Konya" 
+                                target="_blank" 
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+                            >
+                                <i class="fas fa-directions mr-2"></i>Yol Tarifi Al
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ASM ENDÜSTRİ</h3>
+                    <p class="text-gray-300 mb-4">
+                        2010 yılından bu yana otomotiv yedek parça sektöründe kalite ve güvenin adresi.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">İletişim Bilgileri</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Fevzi Çakmak Mah. Sıla Cd. Aspak 3 San. Sit. C Blok 51/1D Karatay, Konya</p>
+                        <p><i class="fas fa-envelope mr-2"></i><a href="mailto:asmotomotiv42@gmail.com" class="hover:text-white transition-colors">asmotomotiv42@gmail.com</a></p>
+                        <p><i class="fas fa-phone mr-2"></i><a href="tel:+905551234567" class="hover:text-white transition-colors">+90 555 123 45 67</a></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Çalışma Saatleri</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Pazartesi - Cuma: 08:00 - 18:00</p>
+                        <p>Cumartesi: 08:00 - 14:00</p>
+                        <p>Pazar: Kapalı</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2024 ASM Endüstri. Tüm hakları saklıdır. 
+                    <span class="block sm:inline mt-2 sm:mt-0">
+                        Tasarım ve Geliştirme: <a href="https://asmendustri.com" class="text-blue-400 hover:text-blue-300 transition-colors">ASM Endüstri</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/905551234567" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div id="message-container" class="fixed top-4 right-4 z-50 hidden">
+        <div id="message-content" class="p-4 rounded-lg shadow-lg text-white font-semibold">
+            <!-- Message will be inserted here -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+</html>

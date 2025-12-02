@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - ASM Endüstri</title>
+    <meta name="description" content="ASM Endüstri hakkında detaylı bilgi. 2010 yılından bu yana otomotiv yedek parça sektöründe kalite ve güvenin adresi.">
+    <meta name="keywords" content="ASM Endüstri hakkında, şirket bilgisi, vizyon, misyon, değerler">
+    <meta name="author" content="ASM Endüstri">
+    <meta property="og:title" content="Hakkımızda - ASM Endüstri">
+    <meta property="og:description" content="ASM Endüstri'nin hikayesi, vizyonu ve değerleri.">
+    <link rel="canonical" href="https://asmendustri.com/hakkimizda">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; z-index: 1000; }
+        .timeline-item { position: relative; }
+        .timeline-item::before { 
+            content: ''; 
+            position: absolute; 
+            left: -8px; 
+            top: 0; 
+            width: 16px; 
+            height: 16px; 
+            background: #3b82f6; 
+            border-radius: 50%; 
+            border: 3px solid white; 
+            box-shadow: 0 0 0 3px #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">ASM ENDÜSTRİ</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">ANASAYFA</a>
+                        <a href="/urunler" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">ÜRÜNLER</a>
+                        <a href="/hakkimizda" class="text-blue-600 hover:text-blue-800 px-3 py-2 text-sm font-medium transition-colors">HAKKIMIZDA</a>
+                        <a href="/iletisim" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">İLETİŞİM</a>
+                        <a href="/admin" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">ADMİN</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
+                <a href="/" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">ANASAYFA</a>
+                <a href="/urunler" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">ÜRÜNLER</a>
+                <a href="/hakkimizda" class="text-blue-600 block px-3 py-2 text-base font-medium">HAKKIMIZDA</a>
+                <a href="/iletisim" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">İLETİŞİM</a>
+                <a href="/admin" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">ADMİN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-bg text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-shadow">HAKKIMIZDA</h1>
+            <p class="text-xl text-shadow max-w-2xl mx-auto">
+                13 yılı aşkın deneyimimizle otomotiv yedek parça sektöründe kalite ve güvenin adresiyiz.
+            </p>
+        </div>
+    </section>
+
+    <!-- Company Story Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Şirketimizin Hikayesi</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        ASM Endüstri, 2010 yılında otomotiv yedek parça sektöründe faaliyet göstermeye başladı. 
+                        Kurulduğumuz günden bu yana, müşterilerimize kaliteli ürünler ve güvenilir hizmet sunma ilkesiyle hareket ediyoruz.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Mercedes, Scania, Renault ve Man markalarının yedek parçalarında uzmanlaşan firmamız, 
+                        modern üretim tesisleri ve deneyimli kadrosuyla sektörde öncü konumunu korumaktadır.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Zamanında teslimat, kaliteli üretim, güvenilir hizmet ve uygun fiyat politikamızla 
+                        müşteri memnuniyetini en üst seviyede tutmayı kendimize misyon edindik.
+                    </p>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">2024 Yılı İtibariyle</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center">
+                                <div class="text-4xl font-bold mb-2">13+</div>
+                                <div class="text-sm">Yıllık Deneyim</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold mb-2">500+</div>
+                                <div class="text-sm">Mutlu Müşteri</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold mb-2">1000+</div>
+                                <div class="text-sm">Ürün Çeşidi</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold mb-2">4</div>
+                                <div class="text-sm">Marka</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Vizyonumuz & Misyonumuz</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Geleceğe yönelik hedeflerimiz ve bugünkü misyonumuz
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 text-center mb-4">Vizyonumuz</h3>
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        Otomotiv yedek parça sektöründe, müşterilerimizin ilk tercihi olacak, 
+                        kalite ve güvenilirlikte öncü bir marka haline gelmek.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 text-center mb-4">Misyonumuz</h3>
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        Müşterilerimize, yüksek kaliteli ürünleri, rekabetçi fiyatlarla, 
+                        zamanında teslim ederek, sektörde güvenilir bir çözüm ortağı olmak.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Değerlerimiz</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    İşimizi yaparken sahip olduğumuz temel değerler
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Güvenilirlik</h3>
+                    <p class="text-gray-600">Müşterilerimize verdiğimiz sözleri zamanında ve eksiksiz yerine getiririz.</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-medal text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Kalite</h3>
+                    <p class="text-gray-600">Ürün ve hizmet kalitemizi sürekli geliştirerek mükemmelliği hedefleriz.</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Zamanında Teslim</h3>
+                    <p class="text-gray-600">Teslimat sürelerine azami özen göstererek müşteri memnuniyetini sağlarız.</p>
+                </div>
+                
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-balance-scale text-2xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Uygun Fiyat</h3>
+                    <p class="text-gray-600">Kaliteli ürünleri rekabetçi fiyatlarla sunarak müşterilerimize değer katarız.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Tarihçemiz</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Firmamızın önemli kilometre taşları
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="relative border-l-2 border-blue-200 pl-8 space-y-8">
+                    <div class="timeline-item">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">2010</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Kuruluş</h3>
+                            <p class="text-gray-600">ASM Endüstri olarak otomotiv yedek parça sektöründe faaliyetlerimize başladık.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">2015</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Üretim Tesisi Genişletmesi</h3>
+                            <p class="text-gray-600">Modern üretim tesisimizi büyüterek kapasitemizi artırdık.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">2020</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">ISO Sertifikasyonu</h3>
+                            <p class="text-gray-600">ISO 9001 kalite yönetim sistemi sertifikamızı alarak kalite standardımızı belgeledik.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">2024</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Dijital Dönüşüm</h3>
+                            <p class="text-gray-600">Yeni web sitemiz ve dijital platformlarımızla müşterilerimize daha iyi hizmet vermeye başladık.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">İş Ortağınız Olmaya Hazırız</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Kalite ve güvenin adresinde sizleri de aramızda görmekten mutluluk duyarız. 
+                Her türlü soru, talep ve öneriniz için bizimle iletişime geçebilirsiniz.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/iletisim" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                    İletişim Formu
+                </a>
+                <a href="tel:+905551234567" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Hemen Ara
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ASM ENDÜSTRİ</h3>
+                    <p class="text-gray-300 mb-4">
+                        2010 yılından bu yana otomotiv yedek parça sektöründe kalite ve güvenin adresi.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">İletişim Bilgileri</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Fevzi Çakmak Mah. Sıla Cd. Aspak 3 San. Sit. C Blok 51/1D Karatay, Konya</p>
+                        <p><i class="fas fa-envelope mr-2"></i><a href="mailto:asmotomotiv42@gmail.com" class="hover:text-white transition-colors">asmotomotiv42@gmail.com</a></p>
+                        <p><i class="fas fa-phone mr-2"></i><a href="tel:+905551234567" class="hover:text-white transition-colors">+90 555 123 45 67</a></p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Çalışma Saatleri</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Pazartesi - Cuma: 08:00 - 18:00</p>
+                        <p>Cumartesi: 08:00 - 14:00</p>
+                        <p>Pazar: Kapalı</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2024 ASM Endüstri. Tüm hakları saklıdır. 
+                    <span class="block sm:inline mt-2 sm:mt-0">
+                        Tasarım ve Geliştirme: <a href="https://asmendustri.com" class="text-blue-400 hover:text-blue-300 transition-colors">ASM Endüstri</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/905551234567" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
