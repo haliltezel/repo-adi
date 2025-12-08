@@ -1,8 +1,8 @@
-# ASM Endüstri Kurumsal Web Sitesi
+ Kurumsal Web Site
 
 ## Proje Açıklaması
 
-ASM Endüstri'nin kurumsal web sitesi, otomotiv yedek parça sektöründe 13+ yıllık deneyimiyle müşterilerine kaliteli ürün ve hizmet sunmayı hedefleyen modern bir web platformudur.
+web platformudur.
 
 ## Özellikler
 
