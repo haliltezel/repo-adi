@@ -197,4 +197,3 @@ asm-website/
 
 ---
 
-**Not**: Bu proje ASM Endüstri'nin kurumsal web sitesi projesidir. Tüm hakları saklıdır.
